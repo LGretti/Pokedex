@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+:root {
+  --bg-color: #424242;
+  --text: #aaa;
+  --nmText: #3a444d;
+  --border-input: #333;
+}
+
+* {
+  font-family: 'Press Start 2P', cursive;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: var(--bg-color) url(../images/body_bg.png);
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+body:nth-child(2) {
+  color: var(--text);
+  margin-top: 5vh;
+}
+
+main {
+  background: url(../images/pokedex.png);
+  position: relative;
+  margin-top: 12vh;
+  height: 637px;
+  width: 425;
+}
+
+#pkmnImg {
+  position: absolute;
+  bottom: 55%;
+  left: 50%;
+  transform: translate(-63%, 20%);
+  height: 19%;
+}
+
+#pkmnDt {
+  position: absolute;
+  font-weight: 600;
+  top: 56.5%;
+  right: 27%;
+  font-size: 100%;
+}
+
+#pkmnNm {
+  color: var(--nmText);
+  text-transform: capitalize;
+}
+
+.frm {
+  position: absolute;
+  width: 65%;
+  top: 68%;
+  left: 13.5%;
+}
+
+.inputSrch {
+  width: 100%;
+  padding: 5%;
+  font-weight: 600;
+  border-radius: 7px;
+  color: var(--nmText);
+  border: 2px solid var(--border-input);
+  box-shadow: -3px 4px 0 var(--text), -5px 7px 0 var(--border-input);
+}
+
+.btns {
+  position: absolute;
+  bottom: 10%;
+  width: 65%;
+  left: 50%;
+  transform: translate(-57%, 0);
+  display: flex;
+  gap: 15px;
+}
+
+.btn {
+  width: 50%;
+  padding: 5%;
+  border-radius: 7px;
+  border: 2px solid var(--border-input);
+  font-weight: 600;
+  color: white;
+  background-color: #444;
+  box-shadow: -3px 4px 0 #222, -5px 7px 0 #000;
+  font-size: 100%;
+}
+
+.btn:active {
+  box-shadow: inset -4px 4px 0 #222;
+  font-size: 90%;
+}
